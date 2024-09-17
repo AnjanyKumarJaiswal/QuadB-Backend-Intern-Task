@@ -1,0 +1,226 @@
+body {
+    font-family: sans-serif;
+    background-color: #181A20; /* Dark background */
+    color: #FFFFFF; /* White text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #262932; /* Darker header background */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown styles (for currency and crypto selection) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.dropbtn {
+    background-color: #363942;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #262932;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #363942;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.buy-btn {
+    background-color: #6184FF; /* Blue buy button */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.telegram-btn {
+    background-color: #363942; /* Dark gray Telegram button */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.telegram-btn img {
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Toggle switch styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input { 
+    opacity: 0; 
+    width: 0; 
+    height: 0; 
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #6184FF; /* Blue when checked */
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #6184FF; 
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.best-price {
+    text-align: center;
+    padding: 2rem;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.currency-symbol {
+    margin-right: 0.5rem;
+}
+
+.average-price {
+    font-size: 0.8rem;
+    color: #A0A3BD; /* Light gray for less important text */
+}
+
+.price-changes {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.change-item {
+    text-align: center;
+}
+
+.change-value {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.crypto-table {
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #363942; /* Dark gray table border */
+}
+
+th {
+    background-color: #262932; /* Darker table header background */
+}
+
+/* Style for negative and positive changes */
+.negative-change {
+    color: #FF6464; /* Red for negative */
+}
+
+.positive-change {
+    color: #43AA8B; /* Green for positive */
+}
+
+.negative-savings {
+    color: #FF6464; /* Red for negative */
+}
+
+.positive-savings {
+    color: #43AA8B; /* Green for positive */
+}
+
+.add-home-btn {
+    background-color: #363942; /* Dark gray button */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto; 
+    width: fit-content;
+}

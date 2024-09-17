@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HODLINFO</title>
+  <link rel="stylesheet" href="app.css"> 
+</head>
+
+<body>
+  <header>
+    <h1>HODLINFO</h1>
+    <div class="header-right">
+      <div class="dropdown">
+        <button class="dropbtn">INR</button>
+        <div class="dropdown-content">
+          </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">BTC</button>
+        <div class="dropdown-content">
+          </div>
+      </div>
+      <button class="buy-btn">BUY BTC</button>
+      <button class="telegram-btn">
+        <img src="telegram-icon.png" alt="Telegram Icon"> Connect Telegram
+      </button>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="best-price">
+      <h2>Best Price to Trade</h2>
+      <div class="price-container">
+        <span class="currency-symbol">₹</span>
+        <span class="price" id="best-price-value">Loading...</span> </div>
+      <p class="average-price">Average BTC/INR net price including commission</p>
+    </section>
+
+    <section class="price-changes">
+      <div class="change-item">
+        <p class="change-value" id="change-5m">--</p>
+        <p class="change-duration">5 Mins</p>
+      </div>
+      <div class="change-item">
+        <p class="change-value" id="change-1h">--</p>
+        <p class="change-duration">1 Hour</p>
+      </div>
+      <div class="change-item">
+        <p class="change-value" id="change-1d">--</p>
+        <p class="change-duration">1 Day</p>
+      </div>
+      <div class="change-item">
+        <p class="change-value" id="change-7d">--</p>
+        <p class="change-duration">7 Days</p>
+      </div>
+    </section>
+
+    <section class="crypto-table">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Traded Price</th>
+            <th>Buy / Sell Price</th>
+            <th>Difference</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-data">
+          </tbody>
+      </table>
+    </section>
+
+    <button class="add-home-btn">Add hodlinfo to home screen</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
