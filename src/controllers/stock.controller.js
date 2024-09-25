@@ -1,17 +1,7 @@
 import axios from "axios";
 import { stockDataSchema, CompanyStock } from "../models/stock.schema.js";
 
-// export async function FetchStocks(req, res, next) {
-//   try {
-//     const companyStocks = await CompanyStock.find();
-//     return res.status(200).json({
-//       message: "Successfully fetched all the Stocks",
-//       data: companyStocks
-//     });
-//   } catch (err) {
-//     next(err);
-//   }
-// }
+
 export async function FetchStocks(req, res, next) {
   try {
     const companyStocks = await CompanyStock.find();
